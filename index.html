@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Holy Quran</title>
   </head>
 
@@ -23,8 +24,8 @@
 
       <!-- The Navigation Links -->
       <ul>
-        <a href="#home"
-          ><li><span class="medium">HOME</span></li></a
+        <a href="#home">
+            <li><span class="medium">HOME</span></li></a
         >
         <a href="#about">
           <li><span class="medium">QURAN</span></li>
@@ -32,8 +33,12 @@
         <a href="#audio">
           <li><span class="medium">QURAN AUDIO</span></li>
         </a>
-        <li><span class="medium">BLOGS</span></li>
-        <li><span class="medium">ABOUT US</span></li>
+        <a href="#blogs">
+            <li><span class="medium">BLOGS</span></li>
+        </a>
+        <a href="#about-us">
+            <li><span class="medium">ABOUT US</span></li>
+        </a>
       </ul>
 
       <!-- The Sign In Button -->
@@ -43,19 +48,19 @@
     <!-- Main Content -->
     <main>
       <!-- Landing Page -->
-      <div class="hero slice" id="home">
+      <div class="hero" id="home">
         <!-- Left -->
         <div class="left-text">
-          <h1>Read Quran Everyday. Add On Your Daily Routine</h1>
-
-          <p class="light">
-            the quran is the central relegious text of islam.Muslims believe the
-            quran is the book of divine guidnace and direction for mankind
-          </p>
-
-          <div class="buttons-lair">
-            <button class="filled">Read Quran</button>
-            <button class="outlined">Quran Audio</button>
+          <div class="hero-wrapper">
+              <h1>Read Quran Everyday. Add On Your Daily Routine</h1>
+              <p class="light">
+                the quran is the central relegious text of islam. Muslims believe the
+                quran is the book of divine guidnace and direction for mankind
+              </p>
+              <div class="buttons-lair">
+                <button class="filled">Read Quran</button>
+                <button class="outlined">Quran Audio</button>
+              </div>
           </div>
         </div>
 
@@ -89,52 +94,139 @@
       <h1 id="audio" class="slice-h">
         Ready Holy Quran With Translation And Tafsir Of Every Ayat
       </h1>
-      <input type="text" />
-      <div class="slice"></div>
+
+      <input type="text" class="sourah-search" placeholder="Search 'Al-Fatiha'"/>
+
+      <div class="slice sourah-lair">
+
+        <div class="surah-card">
+            <span>1</span>
+            <div class="surah-description">
+                <h3>Al-Fatihah</h3>
+                <p class="regular">The Opener</p>
+                <p class="regular">Verse 07</p>
+            </div>
+            <img src="./images/hamburger.png" alt="">
+        </div>
+        <div class="surah-card">
+            <span>1</span>
+            <div class="surah-description">
+                <h3>Al-Fatihah</h3>
+                <p class="regular">The Opener</p>
+                <p class="regular">Verse 07</p>
+            </div>
+            <img src="./images/hamburger.png" alt="">
+        </div>
+        <div class="surah-card">
+            <span>1</span>
+            <div class="surah-description">
+                <h3>Al-Fatihah</h3>
+                <p class="regular">The Opener</p>
+                <p class="regular">Verse 07</p>
+            </div>
+            <img src="./images/hamburger.png" alt="">
+        </div>
+        <div class="surah-card">
+            <span>1</span>
+            <div class="surah-description">
+                <h3>Al-Fatihah</h3>
+                <p class="regular">The Opener</p>
+                <p class="regular">Verse 07</p>
+            </div>
+            <img src="./images/hamburger.png" alt="">
+        </div>
+        <div class="surah-card">
+            <span>1</span>
+            <div class="surah-description">
+                <h3>Al-Fatihah</h3>
+                <p class="regular">The Opener</p>
+                <p class="regular">Verse 07</p>
+            </div>
+            <img src="./images/hamburger.png" alt="">
+        </div>
+        <div class="surah-card">
+            <span>1</span>
+            <div class="surah-description">
+                <h3>Al-Fatihah</h3>
+                <p class="regular">The Opener</p>
+                <p class="regular">Verse 07</p>
+            </div>
+            <img src="./images/hamburger.png" alt="">
+        </div>
+        <div class="surah-card">
+            <span>1</span>
+            <div class="surah-description">
+                <h3>Al-Fatihah</h3>
+                <p class="regular">The Opener</p>
+                <p class="regular">Verse 07</p>
+            </div>
+            <img src="./images/hamburger.png" alt="">
+        </div>
+        <div class="surah-card">
+            <span>1</span>
+            <div class="surah-description">
+                <h3>Al-Fatihah</h3>
+                <p class="regular">The Opener</p>
+                <p class="regular">Verse 07</p>
+            </div>
+            <img src="./images/hamburger.png" alt="">
+        </div>
+        <div class="surah-card">
+            <span>1</span>
+            <div class="surah-description">
+                <h3>Al-Fatihah</h3>
+                <p class="regular">The Opener</p>
+                <p class="regular">Verse 07</p>
+            </div>
+            <img src="./images/hamburger.png" alt="">
+        </div>
+
+      </div>
+
       <button class="outlined">Show All Surah</button>
 
 
       <!-- Fourth Slice -->
-      <h1 class="slice-h">
+      <h1 class="slice-h" id="blogs">
         Don't Know To Recitation? Learn Free From Our Blogs
       </h1>
 
-      <div class="slice">
+      <div class="slice-4">
 
         <div class="blogs-lair">
 
             <div class="blog">
                 <img src="./images/Reading-Quran.png" alt="Reading Quran">
                 <h3>Learn From Our Free Blogs</h3>
-                <p>Our website is dedicated to promoting  yfyfyffufufufa better understanding of the Holy Quran. </p>
+                <p class="regular">Our website is dedicated to promoting  yfyfyffufufufa better understanding of the Holy Quran. </p>
                 <a href="">read blog</a>
             </div>
 
             <div class="blog">
                 <img src="./images/Child-Reading-Quran.png" alt="Reading Quran at Sunset">
                 <h3>Learn free from our blogs</h3>
-                <p>Our website is dedicated to promotingvvdv dvdvdvdv a better understanding of the Holy Quran. </p>
+                <p class="regular">Our website is dedicated to promotingvvdv dvdvdvdv a better understanding of the Holy Quran. </p>
                 <a href="">read blog</a>
             </div>
 
             <div class="blog">
                 <img src="./images/Asians-Reading-Quran.png" alt="Asians Kids Reading Quran">
-                <h3></h3>
-                <p>Learn free from our blogs</p>
+                <h3>Learn free from our blogs</h3>
+                <p class="regular">Our website is dedicated to promotingvvdv dvdvdvdv a better understanding of the Holy Quran. </p>
                 <a href="">read blog</a>
             </div>
 
         </div>
 
-        <div class="outlined">Read ALL Blogs</div>
+        <button class="outlined">Read All Blogs</button>
 
-      </div>
+        </div>
 
     </main>
 
 
     <!-- Footer -->
-    <footer id="about">
+    <footer id="about-us">
 
         <!-- Left Side -->
       <div class="footer-left">
@@ -150,7 +242,7 @@
           </p>
         </div>
 
-        <h1>CONTACT INFO:</h1>
+        <h2>CONTACT INFO:</h2>
 
         <ul class="footer-icons">
             <li><img src="./images/Logo.png" alt=""></li>
@@ -169,7 +261,7 @@
             <input type="email" placeholder="Email" />
             <input type="text" placeholder="Anything to add" />
             <!-- <textarea name="" id="" cols="30" rows="10" placeholder="Anything to add..."></textarea> -->
-            <button class="filled">Submit</button>
+            <button>Submit</button>
         </form>
       </div>
 

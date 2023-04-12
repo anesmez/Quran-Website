@@ -4,22 +4,37 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-* {
+/* *{
     outline: 1px solid #f00 !important;
-  }
+} */
 
 html {
     scroll-behavior: smooth;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
 }
 
 img {
     max-width: 100%;
 }
 
+.SemiBold {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.slice {
+    padding: 50px;
+    margin-bottom: 70px;
+}
+
 h1 {
     font-weight: 900;
     font-size: 75px;
-    /* text-shadow: 0 0 10px #fff; */
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+
     color: #37374D;
 }
 
@@ -27,6 +42,11 @@ h1 {
     font-weight: 500;
 }
 
+.regular {
+    color: #4C4B4B;
+    font-weight: 500;
+    font-size: 25px;
+}
 
 .filled {
     width: 300px;
@@ -48,7 +68,7 @@ h1 {
 .outlined {
     width: 300px;
     height: 88px;
-    border: 1px solid #7E7E7E;
+    border: 3px solid #23A76F;
     color : #37374D;
     font-size: 2rem;
     font-weight: 600;
@@ -56,9 +76,8 @@ h1 {
     border-radius: 10px;
 }
 
-
 .outlined:hover {
-    background-color: #7E7E7E;
+    background-color: #23A76F;
     color: #fff;
 }
 
@@ -70,11 +89,16 @@ h1 {
 .light {
     font-weight: 300;
     color: #4D4B4B;
+    font-size: 22px;
+}
+
+main .hero .outlined {
+    border: 1px solid #7E7E7E;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     /* padding: 1rem 1rem; */
@@ -83,6 +107,7 @@ nav {
     position: sticky;
     top: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0rem 2rem;
 }
 
 nav img {
@@ -151,18 +176,13 @@ nav button:hover{
     /* background: #20A36C; */
     /* color: #fff; */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-
-
-/* Now let's style the hero section */
+}
 
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 2rem; */
     background: #fff;
 }
 
@@ -171,43 +191,56 @@ main .hero{
     flex-direction: row;
     justify-content: space-between;
     background: #F5F9FC;
-    /* background-image: url(./images/bg-alt.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    flex-wrap:wrap;
-
+    background-image: url(./images/islamic-background.png);
+    flex-wrap: wrap;
 }
+
+@media screen and (min-width: 768px) {
+    main .hero {
+      min-width: 768px;
+      flex-wrap: nowrap;
+    }
 
 
 main .left-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 2rem;
-    /* background: #fff; */
-    width: 60%;
+    width: 55%;
+}
+
+main .left-text .hero-wrapper {
+    width: 90%;
 }
 
 main .left-text h1 {
-    max-width: 990px;
-    /* font-size: 5rem; */
-    /* font-weight: 2800; */
+    max-width: 850px;
+}
+
+main .left-text p{
+    max-width: 700px;
 }
 
 main .left-text .buttons-lair {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    
     align-items: center;
     width: 100%;
 }
 
+main .left-text .buttons-lair:last-child .outlined{
+    margin-left: 80px;
+}
+
 main .right-image {
-    width: 40%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,12 +249,8 @@ main .right-image {
 
 main img {
     width: 100%;
-    max-width: 700px;
-    margin: 0 2rem;
+    max-width: 800px;
 }
-
-
-
 
 
 .about {
@@ -237,7 +266,6 @@ main img {
     width: 50%;
     padding: 2rem;
     position: relative;
-    overflow: hidden;
     height: 500px;
 }
 
@@ -247,7 +275,7 @@ main img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .about .left img:last-child {
@@ -255,32 +283,154 @@ main img {
   z-index: 1;
   top: 50%;
   left: 50%;
+  max-width: 70%;
   transform: translate(-50%, -50%);
 }
-
-
-/* .left img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-
-
 
 .about .right {
     width: 50%;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.slice-h {
+    margin-bottom: 70px;
+}
 
+.sourah-search {
+    max-width: 750px;
+    width: 100%;
+    height: 110px;
+    border-radius: 10px;
+    border: 3px solid #20A36C;
+    padding-left: 50px;
+    font-size: 32px;
+    font-weight: 600;
+    color:#37374D;
+}
 
+.sourah-search::placeholder {
+    opacity: 1;
+    font-size: 32px;
+    font-weight: 600;
+    color:#616169;
+}
+
+.sourah-lair {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 75px;
+    margin: 2rem 0;
+
+}
+
+.sourah-lair .surah-card {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #7E7E7E;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.sourah-lair .surah-card span{
+    font-size: 32px;
+    font-weight: 600;
+    color:#37374D;
+    height: 84px;
+    width: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.sourah-lair .surah-card .surah-description h3{
+    font-size: 36px;
+    font-weight: 600;
+    color:#37374D;
+    margin-bottom: 0.5rem;
+}
+
+.sourah-lair .surah-card img{
+    width: 30px;
+    height: 30px;
+    padding-top: 30px;
+    align-self: flex-start;
+}
+
+.sourah-lair .surah-card:hover,
+.sourah-lair .surah-card:hover span,
+.sourah-lair .surah-card:hover .surah-description, 
+.sourah-lair .surah-card:hover .surah-description h3, 
+.sourah-lair .surah-card:hover .surah-description p{
+    color: #fff;
+}
+
+.sourah-lair .surah-card:hover,
+.sourah-lair .surah-card:hover span{
+    background-image: linear-gradient(to right, #20A36C , #52E5A7);
+}
+
+.slice-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: #fff;
+}
+
+#blogs {
+    margin-top : 70px;
+}
+
+.blogs-lair{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogs-lair .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #fff;
+    width: 30%;
+    margin: 2rem;
+}
+
+.blogs-lair .blog img {
+    border-radius: 10px;
+}
+
+.blogs-lair .blog h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color:#37374D;
+}
+
+.blogs-lair .blog a{
+    font-size: 24px;
+    font-weight: 600;
+    color:#20A36C;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 footer {
     display: grid;
-    grid-template-columns: ;
-
+    grid-template-columns: repeat(auto-fit, minmax(700px, 2fr));
     background: #37374D;
 }
 
@@ -293,13 +443,12 @@ footer .footer-left {
     padding: 2rem;
     background: #37374D;
     color: #fff;
-    width : 20%
+    /* width : 55% */
 }
 
-footer .footer-left h1 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+footer .footer-left h2 {
+    font-size: 40px;
+    font-weight: 700;
     color: #fff;
 }
 
@@ -308,9 +457,14 @@ footer .footer-left ul{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
     padding: 2rem;
     list-style: none;
+}
+
+
+footer .footer-left ul li{
+    width: 80px;
 }
 
 
@@ -322,46 +476,43 @@ footer .footer-right{
     padding: 2rem;
     background: #fff;
     color: #fff;
-    width : 20%;
+    width : 80%;
     border-radius: 40px;
+    margin: 2rem;
+}
+
+footer .footer-right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 footer .footer-right input {
-    width: 80%;
+    width: 95%;
     padding: 1rem;
     border: none;
     border-radius: 5px;
     margin: 1rem 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     background-color: #37374D;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
 }
 
+footer .footer-right input::placeholder {
+    color: rgb(175, 163, 163);
+    font-size: 24px;
+    font-weight: 600;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer .footer-right button {
+    background-color: #49D99D;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    width: 95%;
+    height : 60px;
+}
