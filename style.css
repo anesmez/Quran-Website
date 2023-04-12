@@ -204,7 +204,7 @@ main .hero{
       min-width: 768px;
       flex-wrap: nowrap;
     }
-
+}
 
 main .left-text{
     display: flex;
